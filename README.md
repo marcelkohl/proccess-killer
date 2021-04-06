@@ -18,4 +18,4 @@ The script can kept running with using the linux command `watch`, for example:
 meaning that the scrippt should run at each 10 seconds and kill any proccess that exceeds 90% of CPU usage.
 
 ## Exceptions
-The script is limited to no kill processes from the root user (pid=0) neither from the root group admin (gid=0)
+The script is limited to not kill processes from the root user (pid=0) neither from the root group admin (gid=0)
