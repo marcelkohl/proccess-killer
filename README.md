@@ -8,12 +8,12 @@ Kill a linux process in a defined memory condition.
 - A notification is shown with the main command that was killed;
 
 ## Running once
-`$ ./pkill.sh <cpu-usage-limit>`
+`$ sh ./pkill.sh <cpu-usage-limit>`
 
 ## Running forever
 The script can kept running with using the linux command `watch`, for example:
 
-`$ watch -n 10 ./pkill.sh 90`
+`$ watch -n 10 sh ./pkill.sh 90`
 
 meaning that the scrippt should run at each 10 seconds and kill any process that exceeds 90% of CPU usage.
 
