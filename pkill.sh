@@ -14,6 +14,6 @@ ps axo user,%cpu,pid,vsz,rss,uid,gid --sort %cpu,rss\
     do\
       ps u --no-headers -p $line;\
       echo "$(date) - $(ps u --no-headers -p $line)" >> pkill.log;\
-      notify-send 'Killing proccess!' $(ps -p $line -o command --no-headers | awk '{print $1}') -u normal -i dialog-warning -t 3000;\
+      notify-send 'Killing process!' $(ps -p $line -o command --no-headers | awk '{print $1}') -u normal -i dialog-warning -t 3000;\
       kill $line;\
   done;
